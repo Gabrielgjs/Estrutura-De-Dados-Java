@@ -2,21 +2,17 @@ package com.gabriel.estruturadados.vetor.application;
 
 import com.gabriel.estruturadados.vetor.Vetor;
 
-public class Aula07 {
+public class Aula08 {
 
 	public static void main(String[] args) {
 		
-		Vetor vetor = new Vetor(10);
+		Vetor vetor = new Vetor(3);
 		
 		vetor.adiciona("B");
 		vetor.adiciona("C");
 		vetor.adiciona("E");
 		vetor.adiciona("F");
 		vetor.adiciona("G");
-		
-		System.out.println(vetor);
-		
-		vetor.adiciona(0, "A");
 		
 		System.out.println(vetor);
 	}
