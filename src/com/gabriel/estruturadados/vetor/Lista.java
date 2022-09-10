@@ -98,6 +98,10 @@ public class Lista<T> {
 		}
 		return -1;
 	}
+	
+	public boolean contem(T elemento) {
+		return busca(elemento) > -1;
+	}
 
 	// Aula04
 	@Override
