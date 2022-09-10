@@ -1,21 +1,42 @@
 package com.gabriel.estruturadados.vetor.application;
 
-import com.gabriel.estruturadados.vetor.Lista;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Aula12 {
 
 	public static void main(String[] args) {
 		
-		Lista<Contato> vetor = new Lista<>(1);
 		
-		Contato c1 = new Contato("Contato 1", "1234-4567", "contato1@email.com");
-		Contato c2 = new Contato("Contato 2", "2225-4895", "contato2@email.com");
-		Contato c3 = new Contato("Contato 3", "1236-9887", "contato3@email.com");
+		List<String> list = new ArrayList<>();
 		
-		Contato c4 = new Contato("Contato 1", "1234-4567", "contato1@email.com");
-	
-		vetor.adiciona(c4);
+		list.add("A");
+		list.add("C");
 		
+		
+		System.out.println(list);
+		
+		list.add(1, "B");
+		
+		System.out.println(list);
+		
+		Boolean existe = list.contains("A");
+		if(existe) {
+			System.out.println("elemento existe na lista");
+		} else {
+			System.out.println("Elemento não existe na lista");
+		}
+		
+		int pos = list.indexOf("D");
+		if(pos > -1) {
+			System.out.println("elemento existe na lista " + pos);
+		} else {
+			System.out.println("elemento não existe na lista " + pos);
+		}
+		
+		
+		System.out.println(list.get(2));
+		System.out.println(list.size());
 	}
 
 }
