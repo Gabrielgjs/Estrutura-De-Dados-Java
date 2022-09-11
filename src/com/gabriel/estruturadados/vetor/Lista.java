@@ -99,8 +99,20 @@ public class Lista<T> {
 		return -1;
 	}
 	
+	//exe01
 	public boolean contem(T elemento) {
 		return busca(elemento) > -1;
+	}
+	//exe02
+	public int ultimoIndice(T elemento) {
+		
+		for (int i = this.tamanho-1; i>=0; i--) {
+			if (this.elementos[i].equals(elemento)) {
+				return i;
+			}
+		}
+		
+		return -1;
 	}
 
 	// Aula04
