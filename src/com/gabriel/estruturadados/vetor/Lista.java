@@ -124,6 +124,27 @@ public class Lista<T> {
 				
 	}
 	
+	//exe04 
+	public T obtem(int pos) {
+		return this.busca(pos);
+	}
+	
+	//exe05
+	public void limpar() {
+//		
+//		//oppção 1
+//		this.elementos = (T[]) new Object[this.elementos.length];
+		
+		//opção 2
+		for(int i=0; i < this.tamanho; i++) {
+			this.elementos[i] = null;
+		}
+		this.tamanho =0;
+//		
+//		// opcao 3
+//		this.tamanho = 0;
+		
+	}
 	
 	// Aula04
 	@Override
