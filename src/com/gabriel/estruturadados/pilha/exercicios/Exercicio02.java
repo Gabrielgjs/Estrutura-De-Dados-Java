@@ -13,7 +13,7 @@ public class Exercicio02 {
 		Pilha<Integer> par = new Pilha<>();
 		Pilha<Integer> impar = new Pilha<>();
 
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 10; i++) { 
 
 			System.out.println("Entre com um número: ");
 				
