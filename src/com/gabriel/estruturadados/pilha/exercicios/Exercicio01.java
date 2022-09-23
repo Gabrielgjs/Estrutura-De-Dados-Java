@@ -19,7 +19,7 @@ public class Exercicio01 {
 			int num = scan.nextInt();
 			
 			if( num % 2 == 0) {
-				System.out.println("Empilhando o núemro " + num);
+				System.out.println("Empilhando o número " + num);
 				pilha.empilha(num);
 			}else {
 				Integer desempilhado = pilha.desimpilha();
